@@ -1,8 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-//apply plugin: 'kotlin-kapt'
-//apply plugin: 'org.greenrobot.greendao'
 
 
 android {
@@ -28,11 +26,6 @@ android {
         jvmTarget = '1.8'
     }
 
-    //使用Kotlin实验特性
-    androidExtensions {
-        experimental = true
-    }
-
     compileOptions {
 //        coreLibraryDesugaringEnabled true
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -50,25 +43,26 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //androidDep
     implementation rootProject.ext.androidDep.appcompat
-    implementation rootProject.ext.androidDep.support
-    implementation rootProject.ext.androidDep.support_annotations
+    implementation rootProject.ext.androidDep.legacy_support
+    implementation rootProject.ext.androidDep.annotation
     implementation rootProject.ext.androidDep.recyclerView
+    //rxjava
+    api rootProject.ext.globalDep.rxjava
+    api rootProject.ext.globalDep.rxandroid
     //logger日志库
     implementation rootProject.ext.globalDep.logger
+    //权限控制
+    implementation rootProject.ext.globalDep.permission
     //工具类
     api rootProject.ext.globalDep.joda_time
-    api rootProject.ext.globalDep.guava
+//    api rootProject.ext.globalDep.guava
     api rootProject.ext.globalDep.utilcode
     api rootProject.ext.globalDep.truetime
     //json处理库
-//    api rootProject.ext.globalDep.fastjson
+    api rootProject.ext.globalDep.fastjson
     api rootProject.ext.globalDep.gson
     //事件总线
     api rootProject.ext.globalDep.eventbus
-    //数据库greendao
-//    api rootProject.ext.globalDep.greendao
-    //数据库升级
-//    api rootProject.ext.globalDep.greendaoupgrade
     //网络请求
     api rootProject.ext.globalDep.okhttp
     api 'com.lzy.net:okgo:3.0.4'

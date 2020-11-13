@@ -10,23 +10,30 @@ ext {
 
 
     /*=================================常用的引用============================================*/
-    //supportLibVersion 的头数字是和targetSdkVersion 版本一样的。
     androidDep = [
-            design             : "com.google.android.material:material:1.1.0",
-            appcompat          : "androidx.appcompat:appcompat:1.1.0",
-            support            : "androidx.legacy:legacy-support-v4:1.0.0",
-            recyclerView       : "androidx.recyclerview:recyclerview:1.1.0",
-            constraintLayout   : "androidx.constraintlayout:constraintlayout:1.1.3",
-            support_annotations: "androidx.annotation:annotation:1.1.0",
-            work_runtime       : "androidx.work:work-runtime:2.3.4",
+            multidex            : "androidx.multidex:multidex:2.0.0",
+            annotation          : "androidx.annotation:annotation:1.1.0",
+            appcompat           : "androidx.appcompat:appcompat:1.2.0",
+            legacy_support      : "androidx.legacy:legacy-support-v4:1.0.0",
+            vectordrawable      : 'androidx.vectordrawable:vectordrawable:1.1.0',
+            recyclerView        : "androidx.recyclerview:recyclerview:1.1.0",
+            coordinatorlayout   : "androidx.coordinatorlayout:coordinatorlayout:1.1.0",
+            constraintLayout    : "androidx.constraintlayout:constraintlayout:2.0.2",
+            material            : "com.google.android.material:material:1.2.1",
+            navigation_fragment : "androidx.navigation:navigation-fragment:2.3.0",
+            navigation_ui       : "androidx.navigation:navigation-ui:2.3.0",
+            lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            work_runtime        : "androidx.work:work-runtime:2.3.4",
     ]
 
     /*=================================module中公共用到的引用============================================*/
     globalDep = [
+            walle                 : "com.meituan.android.walle:library:1.1.7",
+            debug_db              : "com.amitshekhar.android:debug-db:1.0.6",
             leakcanary            : "com.squareup.leakcanary:leakcanary-android:1.6.3",
             leakcanary_no_op      : "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3",
             butterKnife           : "com.jakewharton:butterknife:10.1.0",
-            apt_butterKnife       : "com.jakewharton:butterknife-compiler:10.1.0",
+            butterKnife_compiler  : "com.jakewharton:butterknife-compiler:10.1.0",
             protobuf_java         : "com.google.protobuf:protobuf-java:3.5.1",
             protobuf_java_util    : "com.google.protobuf:protobuf-java-util:3.5.1",
             netty                 : "io.netty:netty-all:4.1.43.Final",
@@ -37,21 +44,36 @@ ext {
             fastjson              : "com.alibaba:fastjson:1.1.71.android",
             gson                  : "com.google.code.gson:gson:2.8.5",
             eventbus              : "org.greenrobot:eventbus:3.1.1",
-            okhttp                : "com.squareup.okhttp3:okhttp:3.13.1",
+            //3.13.1
+            okhttp                : "com.squareup.okhttp3:okhttp:3.12.2",
             guava                 : "com.google.guava:guava:29.0-android",
             utilcode              : "com.blankj:utilcodex:1.29.0",
             serialport            : "com.deemons.serialport:serialport:1.2.0",
+            java_websocket        : "org.java-websocket:Java-WebSocket:1.5.1",
             greendao              : 'org.greenrobot:greendao:3.3.0',
-            greendaoupgrade       : 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1',
+            greendaoupgrade       : 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1',
+            rxpermissions         : 'com.github.tbruyelle:rxpermissions:0.12',
+            permission            : 'com.yanzhenjie:permission:2.0.3',
             //rx系列
-            rxjava                : "io.reactivex.rxjava2:rxjava:2.2.16",
-            rxandroid             : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            rxjava                : "io.reactivex.rxjava3:rxjava:3.0.7",
+            rxandroid             : "io.reactivex.rxjava3:rxandroid:3.0.0",
             rxlifecycle           : "com.trello.rxlifecycle2:rxlifecycle:2.2.1",
             rxlifecycle_android   : "com.trello.rxlifecycle2:rxlifecycle-android:2.2.1",
             rxlifecycle_components: "com.trello.rxlifecycle2:rxlifecycle-components:2.2.1",
+            //
             evernote              : "com.evernote:android-job:1.4.2",
             videocache            : "com.danikula:videocache:2.7.1",
-
+            //MP3解码编码工具
+            lame                  : "com.github.naman14:TAndroidLame:1.1",
+            //loading
+            gloading              : "com.billy.android:gloading:1.1.0",
+            avi_loding            : "com.wang.avi:library:2.1.3",
+            SpinKit               : "com.github.ybq:Android-SpinKit:1.4.0",
+            //
+            countdownview         : "com.github.iwgang:countdownview:2.1.6",
+            szf_pager_tab         : "com.shizhefei:ViewPagerIndicator:1.1.9.androidx",
+            majiajie_pager_tab    : "me.majiajie:pager-bottom-tab-strip:2.3.0X",
+            "brvah_adapter"       : "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6",
 
     ]
 }
