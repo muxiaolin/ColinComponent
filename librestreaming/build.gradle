@@ -7,8 +7,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.globalMinSdkVersion
         targetSdkVersion rootProject.ext.globalTargetSdkVersion
-        versionCode 2
-        versionName "1.0.1"
     }
 
     buildTypes {

@@ -1,3 +1,5 @@
 include ':app', ':base-library'
 include ':librestreaming'
+include ':mqtt-demo'
+include ':org.eclipse.paho.android.service'
 rootProject.name = "ColinComponent"
