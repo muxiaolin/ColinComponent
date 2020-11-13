@@ -72,7 +72,7 @@ dependencies {
 
 ext {
     releaseArtifact = 'commonlib'
-    releaseVersion = '1.0.0'
+    releaseVersion = '1.0.1'
 }
 
 
