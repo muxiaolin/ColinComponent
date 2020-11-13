@@ -5,7 +5,7 @@ android {
     buildToolsVersion rootProject.ext.globalBuildToolsVersion
 
     defaultConfig {
-        minSdkVersion rootProject.ext.globalMinSdkVersion
+        minSdkVersion 16
         targetSdkVersion rootProject.ext.globalTargetSdkVersion
 
     }
