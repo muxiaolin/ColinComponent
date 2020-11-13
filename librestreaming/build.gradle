@@ -45,7 +45,7 @@ dependencies {
 
 
 ext {
-    releaseArtifact = 'commonlib'
+    releaseArtifact = 'librestreaming'
     releaseVersion = '1.0.1'
 }
 
